@@ -1,0 +1,3 @@
+http://www.amazon.com,//*[@id="navFooter"]/div[3],class
+http://www.google.com,//*[@id="navFooter"]/div[3],text
+http://woot.com,//*[@id="summary"]/div/hgroup/a/h2,text
