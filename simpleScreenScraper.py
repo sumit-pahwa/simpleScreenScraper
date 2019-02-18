@@ -65,9 +65,10 @@ def scrapeScreen(df, outputFile, customDelay, driver):
         #wait for customDelay seconds
         time.sleep(customDelay)
 
-        #wait up to 10 more seconds looking for target element.
         print(df['url'][rowNum] + ' - ' + df['xpath'][rowNum] + ' - '+ df['attribute'][rowNum])
+        
         try:
+            #wait up to 10 more seconds looking for target element.
             WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, df['xpath'][rowNum])))
 
             # look for target element
